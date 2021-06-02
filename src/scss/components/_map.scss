@@ -1,0 +1,46 @@
+.map {
+    height: 600px;
+    width: 100%;
+
+    position: relative;
+}
+
+.touch-blocker {
+    display: none;
+
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    opacity: .5;
+
+    &.js-show {
+        display: block;
+    }
+}
+
+.blocker-text {
+    width: 100%;
+
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+
+    position: absolute;
+    top: 50%;
+}
+
+.scroll-block {
+    height: 600px;
+    overflow-y: scroll;
+
+    @media (max-width: 767.98px) {
+        height: 300px;
+    }
+}

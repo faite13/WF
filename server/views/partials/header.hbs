@@ -1,0 +1,55 @@
+<header class="header shadow-bottom bg-danger fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand text-danger" href="/">
+                <svg class="d-inline-block align-middle icon-sm">
+                    <use xlink:href="/img/icons/icons.svg#red-pepper"></use>
+                </svg>
+                <span class="align-middle text-cc2936 brand-name ml-1">Whole Foods</span>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto py-2 align-items-center">
+                    <li class="nav-item text-center mx-1">
+                        {{#if isAbout}}
+                            <a class="header__nav-link nav-link px-2 active" href="/about">Про нас</a>
+                        {{else}}
+                            <a class="header__nav-link nav-link px-2" href="/about">Про нас</a>
+                        {{/if}}
+                    </li>
+                    <li class="nav-item text-center mx-1">
+                        {{#if isDiscounts}}
+                            <a class="header__nav-link nav-link px-2 active" href="/discounts">Знижки</a>
+                        {{else}}
+                            <a class="header__nav-link nav-link px-2" href="/discounts">Знижки</a>
+                        {{/if}}
+                    </li>
+                    <li class="nav-item text-center mx-1">
+                        {{#if isExclusive}}
+                            <a class="header__nav-link nav-link px-2 active" href="/exclusive">Ексклюзив</a>
+                        {{else}}
+                            <a class="header__nav-link nav-link px-2" href="/exclusive">Ексклюзив</a>
+                        {{/if}}
+                    </li>
+                    <li class="nav-item text-center mx-1">
+                        {{#if isCareer}}
+                            <a class="header__nav-link nav-link px-2 active" href="/career">Вакансії</a>
+                        {{else}}
+                            <a class="header__nav-link nav-link px-2" href="/career">Вакансії</a>
+                        {{/if}}
+                    </li>
+                    <li class="nav-item text-center mx-1">
+                        {{#if isMap}}
+                            <a class="header__nav-link nav-link px-2 active" href="/map">Магазини</a>
+                        {{else}}
+                            <a class="header__nav-link nav-link px-2" href="/map">Магазини</a>
+                        {{/if}}
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

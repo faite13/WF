@@ -1,0 +1,14 @@
+.min-h-60 {
+    min-height: 60vh;
+}
+
+.h-600-scroll {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+@media (max-width: 991.98px) {
+    .h-600-scroll {
+        height: 250px !important;
+    }
+}

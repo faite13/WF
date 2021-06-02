@@ -1,0 +1,31 @@
+<main class="mt-5" id="top">
+    <section class="products py-5">
+        <h1 class="title-big mb-4">Актуальні знижки</h1>
+        <div class="container">
+            <ul class="products-grid row cards-container">
+                {{#each dataFromDB}}
+                    <li class="product col-12 col-md-6 col-lg-4">
+                        <div class="product-inner">
+                            <svg class="icon-sm product-icon">
+                                <use xlink:href="/img/icons/icons.svg#red-pepper"></use>
+                            </svg>
+                            <div class="text-center">
+                                <img src="{{img}}" alt="" class="product-img mb-2">
+                                <div class="product-heading w-100">{{name}}</div>
+                            </div>
+                            <div class="product-numbers">
+                                <div class="product-price">
+                                    <div class="product-price-main">{{price}}</div>
+                                </div>
+                                <div class="product-percent">{{percent}}</div>
+                            </div>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+            <div class="text-center">
+                <button class="btn btn-danger btn-lg text-uppercase js-btn">більше знижок</button>
+            </div>
+        </div>
+    </section>
+</main>

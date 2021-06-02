@@ -1,0 +1,63 @@
+.title-big {
+    margin: 0;
+
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.resp-title-lg {
+    font-weight: 700;
+
+    @media (max-width: 991.98px) {
+        font-size: 25px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 20px;
+    }
+}
+
+.ff-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.fz-xxxl {
+    font-size: 200px;
+
+    @media (max-width: 991.98px) {
+        font-size: 160px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 120px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 80px;
+    }
+}
+
+.fz-xl {
+    font-size: 140px;
+
+    @media (max-width: 991.98px) {
+        font-size: 100px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 80px;
+    }
+}
+
+.t-resp {
+    line-height: .8;
+}
+
+.t-resp-xl {@extend .t-resp;font-size: 0.9em;}
+.t-resp-lg {@extend .t-resp;font-size: 0.7em;}
+.t-resp-md {@extend .t-resp;font-size: 0.5em;}
+.t-resp-sm {@extend .t-resp;font-size: 0.35em;}

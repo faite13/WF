@@ -1,0 +1,32 @@
+<main>
+    <section class="my-4 px-4 px-lg-0">
+        <div class="container">
+            <input type="text" class="js-input form-control py-4 mb-5" placeholder="Станція метро">
+            <div class="row pb-5">
+                <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+                    <div class="map" id="map"></div>
+                    <div class="bg-danger touch-blocker js-tBlocker">
+                        <p class="blocker-text mb-0">
+                            Щоб перемістити мапу - торкніться її двома пальцями
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 scroll-block p-0 text-center js-shops-container">
+                    {{#each data}}
+                        <div class="col-12 mb-1 px-0 px-lg-2 js-shop" data-marker="{{point.lat}},{{point.lon}}">
+                            <div class="card bg-light border">
+                            <div class="card-body">
+                                <p class="h5 my-0 js-shop-name">{{name_ex.description}}</p>
+                                <p class="card-text mt-0">{{address_name}}</p>
+                                <p class="card-text my-0">8:00 - 23:00</p>
+                                <p class="card-text mt-0">{{links.nearest_stations.0.name}}</p>
+                                <button class="btn btn-outline-danger btn-block text-uppercase js-shop-btn">На мапі</button>
+                            </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,46 @@
+.navbar {
+    padding: .5rem 0;
+}
+
+.navbar-toggler {
+    padding: 3px 5px;
+
+    transition: background-color .2s linear;
+
+    &.collapsed {
+        background-color: #fff;
+    }
+}
+
+.navbar-brand {
+    padding: 7px 10px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px #fff solid;
+    transition: background-color .3s linear;
+
+    font-family: 'Lobster', cursive;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.header__nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+
+    border-radius: 10px;
+    color: #fff !important;
+
+    transition: color .1s linear,
+    background-color .1s linear;
+
+    &.active,
+    &:hover,
+    &:focus {
+        background-color: #fff;
+        color: #cc2936 !important;
+    }
+}

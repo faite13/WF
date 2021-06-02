@@ -1,0 +1,46 @@
+<main class="mt-5 pt-5 min-vh-100">
+    <section class="pt-3 mb-5">
+        <div class="container">
+            <div class="">
+                <form  class="js-form" method="GET" action="/career/cityVacancies">
+                    <div class="form-row">
+                        <div class="col-12 col-lg-10 mb-2 mb-lg-0">
+                            <select class="selectpicker w-100 p-3 js-dropdown" name="cityId"></select>
+                        </div>
+                        <div class="col-12 col-lg-2 text-right">
+                            <button class="btn btn-danger btn-lg text-uppercase btn-block h-100 js-search-button">Пошук</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="mb-5 min-h-60">
+        <div class="container js-vac-container">
+             <div class="border border-danger empty-error js-empty">
+                <h1 class="resp-title-lg">Нажаль, в цьому місті не знайдено вакансій</h1>
+            </div>
+            {{#each data}}
+                <div class="card mb-3">
+                    <p class="h5 card-header">{{name}}</p>
+                    <div class="card-body">
+                        <p class="card-title h5">{{cityName}}</p>
+                        <a href="https://rabota.ua/company{{notebookId}}/vacancy{{id}}" class="btn btn-danger">Переглянути</a>
+                    </div>
+                    <div class="card-footer text-muted">{{dateTxt}}</div>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+    <section class="py-3">
+        <div class="container">
+            <p class="p-lg-fluid text-center"><span>Контактний телефон:</span>
+                <a class="text-danger" href="tel:0445831719">(044) 583-17-19, </a><br>
+                <a class="text-danger" href="tel:0445072096">(044) 507-20-96</a>
+                <br>
+                <span>E-mail:</span> 
+                <a class="text-danger" href="mailto:hr@furshet.ua"> hr@furshet.ua</a>
+            </p>
+        </div>
+    </section>
+</main>

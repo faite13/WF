@@ -1,0 +1,34 @@
+@import "util/transition-util";
+@import "util/icon-settings";
+@import "components/slider.scss";
+@import "util/text-color";
+@import "components/header";
+@import "components/products-grid";
+@import "components/title";
+@import "util/cursor";
+@import "components/paragraph";
+@import "components/empty-error";
+@import "util/height-util";
+@import "components/map";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    border-bottom: 3px solid #fff;
+}
+
+
+.shadow-bottom {
+    box-shadow: 0 -2px 5px 1px #000;
+}
+
+.footer-link {
+    font-family: 'Source Sans Pro', sans-serif;
+}
